@@ -17,7 +17,7 @@ jobs:
         go get -u github.com/fzipp/gocyclo/cmd/gocyclo
         go get -u github.com/mitchellh/gox
         # do not change go.mod and go.sum
-        git checkout go.mod go.sum
+        git checkout go.mod
     
     - name: code checks
       uses: pre-commit/action@v2.0.0
