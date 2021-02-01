@@ -1,3 +1,3 @@
-module github.com/romnnn/deepequal
+module github.com/romnn/deepequal
 
 go 1.13

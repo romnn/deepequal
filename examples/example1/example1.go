@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/romnnn/deepequal"
+	"github.com/romnn/deepequal"
 )
 
 type person struct {

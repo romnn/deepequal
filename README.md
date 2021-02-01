@@ -3,7 +3,7 @@
 This package is based on the original `reflect.DeepEqual` check, but adds useful error messages pointing out where and how the compared values violate the equality constraint.
 
 ```go
-import "github.com/romnnn/deepequal"
+import "github.com/romnn/deepequal"
 ```
 
 #### Example
@@ -13,7 +13,7 @@ package main
 import (
 	"log"
 
-	"github.com/romnnn/deepequal"
+	"github.com/romnn/deepequal"
 )
 
 type person struct {
@@ -33,7 +33,7 @@ func main() {
 
 For more examples see the `examples/` directory. To see an example in action, you can also run it:
 ```bash
-go run github.com/romnnn/deepequal/examples/example1
+go run github.com/romnn/deepequal/examples/example1
 ```
 
 #### Credits
