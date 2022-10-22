@@ -15,7 +15,11 @@ type person struct {
 func main() {
 	a := person{Name: "A", Age: 22, Hobbies: []string{"Surfing"}}
 	b := person{Name: "A", Age: 22, Hobbies: []string{}}
-	if equal, err := deepequal.DeepEqual(a, b); !equal {
+	if equal, err := deepequal.DeepEqual(a, a); !equal {
 		log.Fatalf("not equal: %v", err)
+	}
+
+	if equal, err := deepequal.DeepEqual(a, b); equal {
+		log.Fatalf("unexpected equal: %v", err)
 	}
 }
