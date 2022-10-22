@@ -16,6 +16,6 @@ func main() {
 	a := person{Name: "A", Age: 22, Hobbies: []string{"Surfing"}}
 	b := person{Name: "A", Age: 22, Hobbies: []string{}}
 	if equal, err := deepequal.DeepEqual(a, b); !equal {
-		log.Fatalf("Not DeepEqual because of: %s", err.Error())
+		log.Fatalf("not equal: %v", err)
 	}
 }

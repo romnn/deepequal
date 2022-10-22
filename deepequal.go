@@ -161,7 +161,7 @@ func deepValueEqual(v1, v2 reflect.Value, visited map[visit]bool, depth int) (bo
 	return false, fmt.Errorf("Value interface differs (%v (%v) vs %v (%v))", v1, v1.Type(), v2, v2.Type())
 }
 
-// DeepEqual reports whether x and y are ``deeply equal,'' defined as follows.
+// DeepEqual reports whether x and y are “deeply equal,” defined as follows.
 // Two values of identical type are deeply equal if one of the following cases applies.
 // Values of distinct types are never deeply equal.
 //

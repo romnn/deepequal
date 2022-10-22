@@ -20,11 +20,11 @@ type SimpleStruct struct {
 
 func assertEqual(t *testing.T, a interface{}, b interface{}) {
 	if equal, err := DeepEqual(a, b); !equal {
-		t.Errorf("Not DeepEqual because of: %s", err.Error())
+		t.Errorf("not equal: %v", err)
 	}
 }
 
-func TestSimpleDeepEquality(t *testing.T) {
+func TestSimpleStruct(t *testing.T) {
 	assertEqual(t, SimpleStruct{}, SimpleStruct{})
 	assertEqual(t, SimpleStruct{Nested: SimpleNestedStruct{Float32: 42}}, SimpleStruct{Nested: SimpleNestedStruct{Float32: 42}})
 	assertEqual(t, SimpleStruct{hiddenField: -1}, SimpleStruct{})
