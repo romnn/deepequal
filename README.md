@@ -3,7 +3,6 @@
 [![GitHub](https://img.shields.io/github/license/romnn/deepequal)](https://github.com/romnn/deepequal)
 [![GoDoc](https://godoc.org/github.com/romnn/deepequal?status.svg)](https://godoc.org/github.com/romnn/deepequal)
 [![Test Coverage](https://codecov.io/gh/romnn/deepequal/branch/master/graph/badge.svg)](https://codecov.io/gh/romnn/deepequal)
-[![Release](https://img.shields.io/github/release/romnn/deepequal)](https://github.com/romnn/deepequal/releases/latest)
 
 This package is based on the original `reflect.DeepEqual`, but adds useful error messages pointing out where and how the compared values differ.
 
